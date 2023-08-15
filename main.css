@@ -219,6 +219,7 @@ footer {
   background-position: center;
   border: none;
   transition: .5s;
+  z-index: 2;
 }
 
 .make_phone_call.active {
