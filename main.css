@@ -224,19 +224,25 @@ section.sell .sell-content p {
 .img-i img {
   width: 100%;
   object-fit: contain;
-  transition: .3s
 }
 
 .img-i img.active {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform-origin: center;
   z-index: 999;
   height: auto;
   max-width: 376px;
-  transition: .3s;
   border: 5px solid white;
+  animation: zoom-in .4s linear forwards;
+}
+
+@keyframes zoom-in {
+  0% { transform: translateX(-50%) translateY(-50%) scale(0); }
+  100% {
+    transform: translateX(-50%) translateY(-50% )scale(1);
+  }
 }
 
 .img_overlay {
@@ -251,7 +257,7 @@ section.sell .sell-content p {
   filter: blur(5px);
   background-repeat: no-repeat;
   background-position: center;
-  backdrop-filter: brightness(0.5);
+  backdrop-filter: brightness(0);
   background-size: cover;
 }
 
@@ -267,7 +273,7 @@ section.sell .sell-content p {
   display: none;
   position: fixed;
   bottom: 20px;
-  z-index: 200;
+  z-index: 1000;
   right: 20px;
   border-radius: 50%;
   width: 90px;
