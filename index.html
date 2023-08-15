@@ -126,6 +126,9 @@
     </div>
   </footer>
   <div class="img_overlay"></div>
+  <div class="modal_img">
+    <img src="" alt="">
+  </div>
   <img class="watermark" src="./images/main-logo.png" loading="eager" alt="EMBEs PannaCotta Watermark">
   <script>
     window.addEventListener('scroll', () => {
@@ -139,17 +142,21 @@
 
     let currentImgs = document.querySelectorAll('.img-i img')
     let overlayImgs = document.querySelector('.img_overlay')
+    let modalImg = document.querySelector('.modal_img')
+    let modalCImg = document.querySelector('.modal_img img')
     currentImgs.forEach(element => {
       element.addEventListener('click', (e) => {
-        e.currentTarget.classList.add('active')
         const urlImg = e.currentTarget.src
+        modalCImg.src = urlImg
+        modalImg.classList.add('active')
         overlayImgs.style.backgroundImage = 'url(' + urlImg + ')';
         overlayImgs.classList.add('active')
       })
     });
     overlayImgs.addEventListener('click', () => {
       overlayImgs.classList.remove('active')
-      document.querySelector('.img-i img.active').classList.remove('active')
+      document.querySelector('.modal_img.active').classList.remove('active')
+      modalCImg.src = ''
     })
   </script>
 </body>

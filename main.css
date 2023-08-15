@@ -228,19 +228,6 @@ section.sell .sell-content p {
   transition: .3s linear;
 }
 
-.img-i img.active {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform-origin: center;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 999;
-  height: auto;
-  max-width: 376px;
-  border: 5px solid white;
-  transition: .2s linear;
-}
-
 .img_overlay {
   cursor: pointer;
   position: fixed;
@@ -358,6 +345,28 @@ footer .ico.fb {
 }
 
 .mt-0 { margin-top: 0; }
+
+.modal_img {
+  z-index: 101;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) scale(0);
+  transition: .3s;
+  transform-origin: center;
+}
+
+.modal_img.active {
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  transform-origin: center;
+  transition: .3s;
+}
+
+.modal_img img {
+  height: auto;
+  max-width: 376px;
+  border: 5px solid white;
+}
 
 @media screen and (width > 480px) {
   .intro_1 { font-size: 3.15rem; }
