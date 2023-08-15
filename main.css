@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'Josefin_Sans';
+  src: url('./fonts/JosefinSans-Italic-VariableFont_wght.ttf');
+  font-display: swap;
+}
+
+html {
+  font-family: 'Josefin_Sans';
+  box-sizing: border-box;
+}
+
+body {
+  padding: 36px 0 0;
+  margin: 0;
+  color: #333;
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header.header--top {
+  display: flex;
+  padding: 0.225rem 0;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 100;
+}
+
+header.header--top .text_logo {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  display: block;
+}
+
+section.intro .intro_1 {
+  color: black;
+}
+
+section.f1 {
+  padding: 10px;
+}
+
+.h_title {
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+.font_2 {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.section_header {
+  font-size: 30px;
+}
+
+section.ingredient {
+  position: relative;
+}
+
+.ingredient_1, .ingredient_2 {
+  width: 250px;
+  position: absolute;
+}
+
+.ingredient_1 {
+  right: 30%;
+}
+.ingredient_2 {
+  right: 5%;
+}
+
+.products {
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.product {
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: start;
+}
+
+.product.str {
+  border: 1px solid #f1d2d8;
+}
+
+.product.kiwi {
+  border: 1px solid #cdddd4;
+}
+
+.product.pas {
+  border: 1px solid #f3dbbd;
+}
+
+.product-img {
+  width: 51%;
+  height: 200px;
+  object-fit: cover;
+  flex: 1;
+}
+
+.product-name {
+  flex: 1;
+  text-align: center;
+  align-self: center;
+}
+
+.img_wrap {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+
+.img-i {
+  width: 33%;
+}
+
+.img-i img {
+  width: 100%;
+  object-fit: contain;
+}
+
+footer {
+  margin-top: 300px;
+  height: 50px;
+  background: #dd5168;
+  padding: 20px 10px;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .intro img { width: 250px; }
+}
+
+.intro_1 {
+  font-size: 2.25rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.intro {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+
+
+@media screen and (width > 480px) {
+  .intro_1 { font-size: 3.15rem; }
+
+  .intro img { width: 285px; }
+}
