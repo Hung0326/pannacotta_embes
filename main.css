@@ -79,45 +79,8 @@ section.ingredient {
   position: absolute;
 }
 
-section.sell {
-  background-image: url('./images/bg-min.jpg');
-  position: relative;
-  background-position: center;
-  background-attachment: scroll;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  padding: 10px;
-}
-
-section.sell .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #444;
-  opacity: 0.8;
-  z-index: 1;
-}
-
-section.sell .sell-content {
-  position: absolute;
-  z-index: 2;
-  color: white;
-  font-size: 20px;
-  border: 5px solid white;
-  position: relative;
-  padding: 10px;
-}
-
-section.sell .sell-content a ,
-section.sell .sell-content p {
-  font-size: 16px;
-  color: white;
-}
-
 .ingredient_1 {
-  right: 35%;
+  right: 30%;
 }
 .ingredient_2 {
   right: 5%;
@@ -184,7 +147,7 @@ section.sell .sell-content p {
 footer {
   margin-top: 300px;
   height: 50px;
-  background: #844751;
+  background: #dd5168;
   padding: 20px 10px;
   color: #fff;
 }
@@ -206,59 +169,7 @@ footer {
   position: relative;
 }
 
-.make_phone_call {
-  position: fixed;
-  background-color: #dd5168;
-  background-image: url(./icons/icons-call.png);
-  width: 49px;
-  height: 50px;
-  bottom: -100%;
-  right: 10px;
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  transition: .5s;
-}
 
-.make_phone_call.active {
-  bottom: 100px;
-  transition: .5s;
-}
-
-footer .contact {
-  padding-bottom: 6px;
-}
-
-footer .ico {
-  width: 30px;
-  height: 30px;
-}
-
-footer .ico.phone {
-  background-image: url(./icons/icons-call.png);
-  background-repeat: no-repeat;
-  background-size: 25px 25px;
-}
-
-footer .ico.fb {
-  background-image: url(./icons/icon-facebook.png);
-  background-repeat: no-repeat;
-  background-size: 26px 26px;
-}
-
-.group-contact {
-  display: flex;
-  justify-content: flex-start;
-  align-items: end;
-}
-
-.group-contact a {
-  color: white;
-  text-decoration: none;
-}
-
-.mt-0 { margin-top: 0; }
 
 @media screen and (width > 480px) {
   .intro_1 { font-size: 3.15rem; }
