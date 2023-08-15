@@ -7,8 +7,7 @@
   <title>EMBEs PannaCotta</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <!-- <link rel="stylesheet" href="main.min.css"> -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="main.min.css">
   <meta property="og:image" content='https://pannacottaembes.shop/images/og.png'>
   <meta name="description" content="Pannacotta vị ngon sánh mịn, được làm từ những nguyên liệu tốt nhát. Pannacotta nhà làm đảm bảo vệ sinh an toàn thực phẩn. Hỗ trợ giao hàng từ 5 hộp trở lên.">
   <meta name="keywords" content="Panna Cotta, Pannacotta, Panna cotta dâu tây, Panna cotta chanh dây, Panna cotta kiwi, Panna cotta vị ngon béo ngậy, EMBEs PannaCotta, embes pannacotta, embe pannacotta, EMBEs, PannaCottaEMBEs, pannacottaembes, pannacotta embes, pannacotta embe, pannacottaembes.shop">
@@ -25,7 +24,9 @@
 <body>
   <header class="header--top">
     <div class="container">
-      <h1 class="text_logo">EMBEs PannaCotta</h1>
+      <h1 class="text_logo">
+        <a class="text_logo" href="/">EMBEs PannaCotta</a>
+      </h1>
     </div>
   </header>
   <div class="container">
@@ -71,7 +72,7 @@
     <h2 class="h_title">Hình ảnh sản phẩm</h2>
     <ul class="img_wrap">
       <li class="img-i">
-        <img src="./images/real/a__1.jpg" alt="Panna Cotta" loading="lazy" width="182px" height="300px">
+        <img src="./images/real/a__1.jpg" data-action="zoom" alt="Panna Cotta" loading="lazy" width="182px" height="300px">
       </li>
       <li class="img-i">
         <img src="./images/real/a__2.jpg" alt="Panna Cotta" loading="lazy" width="182px" height="300px">
@@ -124,6 +125,8 @@
       <a target="_blank" href="https://www.facebook.com/profile.php?id=61550251735509" class="contact">EMBEs PannaCotta</a>
     </div>
   </footer>
+  <div class="img_overlay"></div>
+  <img class="watermark" src="./images/main-logo.png" loading="lazy" alt="EMBEs PannaCotta Watermark">
   <script>
     window.addEventListener('scroll', () => {
       console.log(window.pageYOffset)
@@ -133,6 +136,21 @@
         document.querySelector('a.make_phone_call').classList.remove('active')
       }
     });
+
+    let currentImgs = document.querySelectorAll('.img-i img')
+    let overlayImgs = document.querySelector('.img_overlay')
+    currentImgs.forEach(element => {
+      element.addEventListener('click', (e) => {
+        e.currentTarget.classList.add('active')
+        const urlImg = e.currentTarget.src
+        overlayImgs.style.backgroundImage = 'url(' + urlImg + ')';
+        overlayImgs.classList.add('active')
+      })
+    });
+    overlayImgs.addEventListener('click', () => {
+      overlayImgs.classList.remove('active')
+      document.querySelector('.img-i img.active').classList.remove('active')
+    })
   </script>
 </body>
 </html>
