@@ -224,6 +224,7 @@ section.sell .sell-content p {
 .img-i img {
   width: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .img-i img.active {
@@ -246,6 +247,7 @@ section.sell .sell-content p {
 }
 
 .img_overlay {
+  cursor: pointer;
   position: fixed;
   top: 0;
   left: 0;
