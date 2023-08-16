@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EMBEs PannaCotta</title>
   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-  <link rel="icon" type="image/png" href="./images/favicon.png">
   <link rel="stylesheet" href="main.min.css">
   <meta property="og:image" content='https://pannacottaembes.shop/images/main-logo.png'>
+  <meta property="og:title" content="EMBEs PannaCotta | Pannacotta vị ngon sánh mịn">
   <meta name="description" content="Pannacotta vị ngon sánh mịn, được làm từ những nguyên liệu tốt nhát. Pannacotta nhà làm đảm bảo vệ sinh an toàn thực phẩn. Hỗ trợ giao hàng từ 5 hộp trở lên.">
-  <meta name="keywords" content="Pannacotta vị ngon sánh mịn, Panna Cotta, Pannacotta, Panna cotta dâu tây, Panna cotta chanh dây, Panna cotta kiwi, Panna cotta vị ngon béo ngậy, EMBEs PannaCotta, embes pannacotta, embe pannacotta, EMBEs, PannaCottaEMBEs, pannacottaembes, pannacotta embes, pannacotta embe, pannacottaembes.shop">
+  <meta name="keywords" content="Panna Cotta, Pannacotta, Panna cotta dâu tây, Panna cotta chanh dây, Panna cotta kiwi, Panna cotta vị ngon béo ngậy, EMBEs PannaCotta, embes pannacotta, embe pannacotta, EMBEs, PannaCottaEMBEs, pannacottaembes, pannacotta embes, pannacotta embe, pannacottaembes.shop, Pannacotta vị ngon sánh mịn">
     <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZN38L6Q14"></script>
   <script>
@@ -130,34 +130,6 @@
   <div class="img_overlay"></div>
   <img class="watermark" src="./images/main-logo.png" loading="eager" alt="EMBEs PannaCotta Watermark">
   <div class="modal_img"><img src="" alt=""></div>
-  <script>
-    window.addEventListener('scroll', () => {
-      console.log(window.pageYOffset)
-      if (window.pageYOffset > 150) {
-        document.querySelector('a.make_phone_call').classList.add('active')
-      } else {
-        document.querySelector('a.make_phone_call').classList.remove('active')
-      }
-    });
-
-    let currentImgs = document.querySelectorAll('.img-i img')
-    let overlayImgs = document.querySelector('.img_overlay')
-    let modalImg = document.querySelector('.modal_img')
-    let modalCImg = document.querySelector('.modal_img img')
-    currentImgs.forEach(element => {
-      element.addEventListener('click', (e) => {
-        const urlImg = e.currentTarget.src
-        modalCImg.src = urlImg
-        modalImg.classList.add('active')
-        overlayImgs.style.backgroundImage = 'url(' + urlImg + ')';
-        overlayImgs.classList.add('active')
-      })
-    });
-    overlayImgs.addEventListener('click', () => {
-      overlayImgs.classList.remove('active')
-      document.querySelector('.modal_img.active').classList.remove('active')
-      modalCImg.src = ''
-    })
-  </script>
+  <script src="./javascripts/home.min.js"></script>
 </body>
 </html>
