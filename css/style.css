@@ -8212,3 +8212,12 @@ h6,
 .bg-pas {
   background-color: #d7c693;
 }
+
+.owl-carousel.embe .owl-nav {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  left: 0;
+  margin: 0 -20px;
+  width: auto; 
+}
