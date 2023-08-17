@@ -5,7 +5,7 @@
   <meta name="google-site-verification" content="6upWJgn1ZoLUX9cWZhRwbOZwmcM5foWqoBnjCMeM3cY" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EMBEs PannaCotta | Sản phẩm</title>
+  <title>EMBEs PannaCotta | Hình ảnh</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/x-icon" href="../favicon-16x16.png">
   <link rel="icon" type="image/x-icon" href="../favicon-32x32.png">
@@ -37,6 +37,11 @@
   <!-- Font Awesome -->
   <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
 
+  <!-- Libraries Stylesheet -->
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
   <link href="../css/style.css" rel="stylesheet">
 </head>
 
@@ -58,13 +63,13 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="/" class="nav-item nav-link">Trang Chủ</a>
-                        <a href="/san-pham" class="nav-item nav-link active">Sản Phẩm</a>
+                        <a href="/san-pham" class="nav-item nav-link">Sản Phẩm</a>
                     </div>
                     <a href="/" class="navbar-brand mx-5 d-none d-lg-block">
                         <h1 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h1>
                     </a>
                     <div class="navbar-nav mr-auto py-0">
-                        <a href="/hinh-anh" class="nav-item nav-link">Hình Ảnh</a>
+                        <a href="/hinh-anh" class="nav-item nav-link active">Hình Ảnh</a>
                         <a href="/lien-he" class="nav-item nav-link">Liên Hệ</a>
                     </div>
                 </div>
@@ -77,53 +82,78 @@
     <!-- Header Start -->
     <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
         <div class="container text-center py-5">
-            <h1 class="text-white display-3 mt-lg-5">Sản Phẩm</h1>
+            <h1 class="text-white display-3 mt-lg-5">Hình ảnh</h1>
         </div>
     </div>
     <!-- Header End -->
 
 
-    <!-- Products Start -->
-    <div class="container-fluid py-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
-                        <div class="bg-primary mt-n5 py-3" style="width: 80px;">
-                            <h4 class="font-weight-bold text-white mb-0">10.000</h4>
-                        </div>
-                        <div class="position-relative bg-primary rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                            <img class="rounded-circle w-100 h-100" src="../img/str.jpg" style="object-fit: cover;">
-                        </div>
-                        <h5 class="font-weight-bold mb-4">Vị Dâu Tây</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
-                        <div class="bg-pas mt-n5 py-3" style="width: 80px;">
-                            <h4 class="font-weight-bold text-white mb-0">10.000</h4>
-                        </div>
-                        <div class="position-relative bg-pas rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                            <img class="rounded-circle w-100 h-100" src="../img/pas.jpg" style="object-fit: cover;">
-                        </div>
-                        <h5 class="font-weight-bold mb-4">Vị Chanh Dây</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 pb-2">
-                    <div class="product-item d-flex flex-column align-items-center text-center bg-light rounded py-5 px-3">
-                        <div class="bg-kiwi mt-n5 py-3" style="width: 80px;">
-                            <h4 class="font-weight-bold text-white mb-0">10.000</h4>
-                        </div>
-                        <div class="position-relative bg-kiwi rounded-circle mt-n3 mb-4 p-3" style="width: 150px; height: 150px;">
-                            <img class="rounded-circle w-100 h-100" src="../img/kiwi.jpg" style="object-fit: cover;">
-                        </div>
-                        <h5 class="font-weight-bold mb-4">Vị Kiwi</h5>
-                    </div>
-                </div>
-            </div>
+<!-- Portfolio Start -->
+<div class="container-fluid px-0">
+  <div class="container py-1">
+      <div class="row">
+          <div class="col-12 text-center">
+              <ul class="list-inline mb-4 pb-2" id="portfolio-flters">
+                  <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">Tất cả</li>
+                  <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Dâu tây</li>
+                  <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Chanh dây</li>
+                  <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Kiwi</li>
+              </ul>
+          </div>
+      </div>
+      <div class="row m-0 portfolio-container">
+          <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
+              <div class="h-100 position-relative overflow-hidden">
+                  <img class="img-fluid w-100 h-100" src="../img/real/b_1.jpg" alt="">
+                  <a class="portfolio-btn" href="../img/real/b_1.jpg" data-lightbox="portfolio">
+                      <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+              <div class="position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="../img/real/b_2.jpg" alt="">
+                  <a class="portfolio-btn" href="../img/real/b_2.jpg" data-lightbox="portfolio">
+                      <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
+              <div class="position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="../img/real/b_3.jpg" alt="">
+                  <a class="portfolio-btn" href="../img/real/b_3.jpg" data-lightbox="portfolio">
+                      <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 portfolio-item first">
+              <div class="position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="../img/real/b_4.jpg" alt="">
+                  <a class="portfolio-btn" href="../img/real/b_4.jpg" data-lightbox="portfolio">
+                      <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 portfolio-item second">
+              <div class="position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="../img/real/b_5.jpg" alt="">
+                  <a class="portfolio-btn" href="../img/real/b_5.jpg" data-lightbox="portfolio">
+                      <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 p-0 portfolio-item third">
+              <div class="position-relative overflow-hidden">
+                  <img class="img-fluid w-100" src="../img/real/b_6.jpg" alt="">
+                  <a class="portfolio-btn" href="../img/real/b_6.jpg" data-lightbox="portfolio">
+                      <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
+                  </a>
+              </div>
+          </div>
         </div>
     </div>
-    <!-- Products End -->
+  </div>
+<!-- Portfolio End -->
 
 
     <!-- Footer Start -->
@@ -162,7 +192,10 @@
 
     <!-- JavaScript Libraries -->
     <script src="../lib/bootstrap.bundle.min.js"></script>
-  
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+    <script src="../lib/isotope/isotope.pkgd.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/picture.js"></script>
 </body>
 </html>
