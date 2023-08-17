@@ -4684,6 +4684,7 @@ a.close.disabled {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
+  height: -webkit-fill-available;
 }
 
 @keyframes spinner-border {
