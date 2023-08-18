@@ -1536,3 +1536,71 @@ h5 {
   width: 125px !important;
   border-radius: 50%;
 }
+
+@media screen and (min-width: 992px) {
+  .back-to-top {
+    display: block;
+  }
+  .bth-navinator {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .back-to-top {
+    display: none !important;
+  }
+}
+
+.bth-navinator {
+  position: fixed;
+  bottom: -100%;
+  transition: .3s;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: auto;
+  background-color: #62c4e6;
+  border-radius: 30px;
+  z-index: 200;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+}
+.bth-navinator.active {
+  bottom: 20px;
+  transition: .3s;
+}
+.bth-navinator a,
+.bth-navinator div {
+  padding: 3px 10px;
+  margin: 12px;
+}
+
+.b-ico {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+}
+
+.b-ico.call {
+  background-image: url(../img/icons/phone.png);
+}
+
+.b-ico.home {
+  background-image: url(../img/icons/home.png);
+}
+.b-ico.home-active {
+  background-image: url(../img/icons/home-active.png);
+}
+.b-ico.top {
+  background-image: url(../img/icons/top.png);
+}
+
+.b-ico.picture {
+  background-image: url(../img/icons/picture.png);
+}
+
+.b-ico.picture-active {
+  background-image: url(../img/icons/picture-active.png);
+}

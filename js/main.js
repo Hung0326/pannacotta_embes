@@ -30,5 +30,18 @@
         $('html, body').animate({scrollTop: 0}, 1500);
         return false;
     });
+
+    $('.btt').click(function () {
+        $('html, body').animate({scrollTop: 0}, 600);
+        return false;
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            document.querySelector('.bth-navinator').classList.add('active')
+        } else {
+            document.querySelector('.bth-navinator').classList.remove('active')
+        }
+    });
 })(jQuery);
 
