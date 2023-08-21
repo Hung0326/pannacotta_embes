@@ -36,6 +36,10 @@
       loop: true,
       items: 1
   });
-  
+  $('.v-iframe').load(function(){ 
+    $(this).contents().find('body').css({'background-color': '#f3f6ff'});
+});
+// $('.v-iframe').contents().find('body').css({'background-color': '#f3f6ff'});
+
 })(jQuery);
 
