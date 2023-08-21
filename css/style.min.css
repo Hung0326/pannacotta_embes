@@ -1707,5 +1707,4 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   object-fit: cover;
   border-radius: 20px;
   min-height: 510px;
-  pointer-events: none;
 }
