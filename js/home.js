@@ -36,7 +36,4 @@
       loop: true,
       items: 1
   });
-  $('#v-iframe').contents().find('body').css({'background-color': '#f3f6ff'});
-
 })(jQuery);
-
