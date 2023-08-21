@@ -27,6 +27,13 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZN38L6Q14"></script>
   <script>
+    function loadVid(el) {
+      el[0].type = "video/mp4"
+      el[0].src = "/img/real/2901376266035646338.mp4"
+      el[0].onerror = ""
+      $('video#f-iv').append(el[0]);
+    }
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -142,8 +149,8 @@
               </div>
               <div class="col-lg-4" style="min-height: 400px;">
                 <div class="position-relative h-100 f-iv overflow-hidden">
-                  <video preload="none" id="f-iv"frameborder="0"  autoplay loop muted playsinline>
-                    <source loading="lazy" src="/img/real/2901376266035646338.mp4" type="video/mp4">
+                  <video id="f-iv" frameborder="0" autoplay="" muted="" loop="" playsinline="" preload="auto" muted defaultMuted>
+                    <source loading="lazy" src="/img/real/2901376266035646338.webm" type="video/webm" onerror="loadVid($(this))">
                   </video>
                 </div>
               </div>
