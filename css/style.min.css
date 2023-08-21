@@ -1698,7 +1698,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   }
 
   .row.portfolio-container .pe-0 {
-    padding-right: 0;
+    padding: 0;
   }
 }
 
