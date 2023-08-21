@@ -27,10 +27,6 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-4ZN38L6Q14"></script>
   <script>
-    function onMyFrameLoad() {
-      $('#v-iframe').contents().find('body').css({'background-color': '#f3f6ff'});
-    };
-
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -145,9 +141,10 @@
                   <p>Panna Cotta (trong tiếng Italia nghĩa là kem nấu) là một món tráng miệng nấu kem, sữa và đường với bột thạch rồi đợi cho hỗn hợp đông lại. Công thức đầu tiên của Panna Cotta được bắt nguồn ở miền Bắc nước Italia, khi người ta đem làm đông kem sữa với xương cá (collagen trong xương cá sẽ làm đông đặc kem) và thưởng thức. Ngày nay, người ta thường dùng gelatin để chế biến Panna Cotta, cho ra món bánh có kết cấu mịn màng, tan nhẹ trong miệng. Ngoài ra, bạn cũng có thể tăng hương vị bằng các loại trái cây, nước sốt cho món Panna Cotta thêm phần hấp dẫn.</p>
               </div>
               <div class="col-lg-4" style="min-height: 400px;">
-                <div class="position-relative h-100 rounded overflow-hidden">
-                  <iframe allowtransparency="true" loading="" class="v-iframe" onload="onMyFrameLoad(this)" id="v-iframe" src="/img/real/2901376266035646338.mp4" allow='autoplay'></iframe>
-                  <!-- <img class="position-absolute w-100 h-100" src="img/Banh-panna-cotta.jpg" style="object-fit: cover;" alt='banh panna cotta'> -->
+                <div class="position-relative h-100 f-iv overflow-hidden">
+                  <video controls autoplay muted loop>
+                    <source loading="lazy" src="/img/real/2901376266035646338.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
               <div class="col-lg-4 pt-5">

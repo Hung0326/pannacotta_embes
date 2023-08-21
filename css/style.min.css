@@ -1560,8 +1560,9 @@ h5 {
   display: flex;
   width: auto;
   background-color: #62c4e6;
-  border-radius: 30px;
+  border-radius: 45px;
   z-index: 200;
+  opacity: .9;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
 }
 .bth-navinator.active {
@@ -1608,6 +1609,10 @@ h5 {
 .btn-play.b {
   top: unset;
   left: unset;
+}
+
+.btn-play.b h3 {
+  transform: translateX(-2px) translateY(2px);
 }
 
 .btn-play.b::after { background-color: transparent; }
@@ -1695,4 +1700,12 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   .row.portfolio-container .pe-0 {
     padding-right: 0;
   }
+}
+
+.f-iv video {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  min-height: 510px;
+  pointer-events: none;
 }
