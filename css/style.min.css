@@ -1442,6 +1442,14 @@ h5 {
 .fa-angle-double-up:before {
   content: "\f102";
 }
+.fa-angle-left::before {
+  content: "\f104";
+}
+
+.fa-angle-right::before {
+  content: "\f105";
+}
+
 .fa-check:before {
   content: "\f00c";
 }
@@ -1707,4 +1715,38 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   object-fit: cover;
   border-radius: 20px;
   min-height: 510px;
+}
+
+.owl-carousel.embe .owl-nav {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  left: 0;
+  margin: 0 -20px;
+  width: auto; 
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  width: 135px;
+  height: 60px;
+  top: -110px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F195B2;
+  background: #FFFFFF;
+  border-radius: 60px;
+  font-size: 30px;
 }
