@@ -1751,7 +1751,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   font-size: 30px;
 }
 .bg-raspberry {
-  background-color: #d42c2c;
+  background-color: #b01212;
 }
 
 @media (min-width: 992px) {
