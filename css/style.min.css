@@ -2890,7 +2890,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   height: 40px;
   top: -10px;
   left: 20px;
-  background: #fbaf32;
+  background: #f195b2;
   border-radius: 30px;
   z-index: -1;
 }
@@ -2928,6 +2928,10 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
   .feature .feature-item i::after {
     left: 50%;
+  }
+
+  .page-header-a {
+    display: none;
   }
 }
 
@@ -3022,7 +3026,7 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fbaf32;
+  background: #f195b2;
   border-radius: 50px;
 }
 
@@ -3097,4 +3101,41 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   .contact .contact-info .contact-text h3 {
     margin-bottom: 0;
   }
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: "/";
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: underline;
+}
+
+.breadcrumb-item + .breadcrumb-item:hover::before {
+  text-decoration: none;
+}
+
+.breadcrumb-item.active {
+  color: #6c757d;
 }
