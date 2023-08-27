@@ -2834,6 +2834,12 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   z-index: 1;
 }
 
+@media (min-width: 992px) {
+  .feature {
+    padding: 60px 0;
+  }
+}
+
 .feature .section-header {
   margin-bottom: 30px;
 }
