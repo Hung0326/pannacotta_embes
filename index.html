@@ -13,13 +13,14 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
+  <link href="css/style.min.css" rel="stylesheet">
 
   <meta property="og:type" content="website">
   <meta property="og:image" content='https://pannacottaembes.shop/images/main-logo.png'>
   <meta property="og:title" content="EMBEs PannaCotta | Pannacotta vị ngon sánh mịn">
   <link rel="canonical" href="https://pannacottaembes.shop">
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/style.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700&display=swap" rel="stylesheet">
   <script src="./lib/jquery-3.4.1.min.js"></script>
 
   <meta name="description" content="Pannacotta vị ngon sánh mịn, được làm từ những nguyên liệu tốt nhất. Pannacotta nhà làm đảm bảo vệ sinh an toàn thực phẩn. Hỗ trợ giao hàng từ 5 hộp trở lên.">
@@ -50,7 +51,6 @@
 
   <!-- Libraries Stylesheet -->
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -62,7 +62,7 @@
   <!-- Navbar Start -->
   <div class="container-fluid position-relative nav-bar p-0">
     <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-      <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0 navbar_v2">
         <a href="/" class="navbar-brand d-block d-lg-none">
           <h2 class="m-0 display-4 logo text-primary"><span class="text-secondary">EMBEs</span>PannaCollta</h2>
         </a>
@@ -97,7 +97,7 @@
           <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
             <div class="" style="max-width: 900px;">
               <div class="sell-content pc d-none d-md-block d-lg-block">
-                <h2 class="mt-0 display-3 text-white">Hiện tại chúng tôi chỉ đang bán hàng với hình thức <strong>ONLINE</strong></h2>
+                <h2 class="mt-0 display-3 text-white">Hiện tại EMBEs chỉ đang bán hàng với hình thức <strong>ONLINE</strong></h2>
                 <h4 class="text-white text-uppercase">
                   Quý khách mua hàng vui lòng liên hệ số điện thoại cũng như page của <strong>EMBEs PannaCotta</strong>
                 </h4>
@@ -105,7 +105,7 @@
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61550251735509" class="contact"><h3 class="text-primary"><strong>EMBEs PannaCotta</strong></h3></a>
               </div>
               <div class="sell-content d-sm-block d-md-none">
-                <h4 class="mt-0 text-white">Hiện tại chúng tôi chỉ đang bán hàng với hình thức <strong>ONLINE</strong></h4>
+                <h4 class="mt-0 text-white">Hiện tại EMBEs chỉ đang bán hàng với hình thức <strong>ONLINE</strong></h4>
                 <p>
                   Quý khách mua hàng vui lòng liên hệ số điện thoại cũng như page của <strong>EMBEs PannaCotta</strong>
                 </p>
@@ -243,63 +243,72 @@
   </div>
   <!-- Products End -->
 
-  <!-- Gallery -->
-  <div class="container my-0 py-5 px-0">
-    <div class="row justify-content-center m-0">
-      <div class="col-lg-5">
-        <h2 class="section-title position-relative text-center mb-5">Hình ảnh sản phẩm</h2>
-      </div>
-    </div>
-
-    <div class="row portfolio-container">
-      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 pe-0">
-        <div class="position-relative overflow-hidden portfolio-item rounded mb-4">
-          <img class="img-fluid w-100 h-100 shadow-1-strong" src="./img/real/b_5.jpg" loading="lazy" alt="Embes Pannacotta">
-          <a class="portfolio-btn" href="./img/real/b_5.jpg" data-lightbox="portfolio" aria-label="portfolio">
-            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-          </a>
+  <!-- Feature Start -->
+  <div class="feature">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="section-header">
+                    <p>Hãy chọn EMBEs</p>
+                    <h2>Our Key Features</h2>
+                </div>
+                <div class="feature-text">
+                  <div class="feature-img">
+                      <div class="row">
+                          <div class="col-6">
+                              <img loading="lazy" src="img/real/b_5.jpg" alt="Panna Cotta">
+                          </div>
+                          <div class="col-6">
+                              <img loading="lazy" src="img/real/b_6.jpg" alt="Panna Cotta">
+                          </div>
+                          <div class="col-6">
+                              <img loading="lazy" src="img/real/b_2.jpg" alt="Panna Cotta">
+                          </div>
+                          <div class="col-6">
+                              <img loading="lazy" src="img/real/b_3.jpg" alt="Panna Cotta">
+                          </div>
+                      </div>
+                  </div>
+                  <p>
+                    Bạn có thể xem thêm hình ảnh thực tế của những chiếc bánh Pannacotta <a target="_blank" href="/hinh-anh.html">tại đây</a>.
+                  </p>
+                </div>
+            </div>
+            <div class="col-lg-7 pt-5">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="feature-item">
+                    <i class="flaticon-ingredient"></i>
+                    <h3>Nguyên liệu & sản phẩm chất lượng</h3>
+                    <p>
+                        EMBEs sử dụng Sữa tươi TH True Milk & Anchor whipping cream để tạo nên những chiếc bánh sánh mịn.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="feature-item">
+                    <i class="flaticon-safe"></i>
+                    <h3>An toàn & vệ sinh</h3>
+                    <p>
+                      Những chiếc bánh sẽ được đóng hộp và bảo quản ở nhiệt độ từ 5 đến 10 độ.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="feature-item">
+                    <i class="flaticon-in-transit"></i>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>
+                      Hỗ trợ giao hàng trong khu vực Thành Phố Hồ Chí Minh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-
-        <div class="position-relative overflow-hidden portfolio-item rounded mb-4">
-          <img class="img-fluid w-100 h-100 shadow-1-strong" src="./img/real/b2.jpg" loading="lazy" alt="Embes Pannacotta">
-          <a class="portfolio-btn" href="./img/real/b2.jpg" data-lightbox="portfolio" aria-label="portfolio">
-            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0 pe-0">
-        <div class="position-relative overflow-hidden portfolio-item rounded mb-4">
-          <img class="img-fluid w-100 h-100 shadow-1-strong" src="./img/real/b1.jpg" loading="lazy" alt="Embes Pannacotta">
-          <a class="portfolio-btn" href="./img/real/b1.jpg" data-lightbox="portfolio" aria-label="portfolio">
-            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-          </a>
-        </div>
-        <div class="position-relative overflow-hidden portfolio-item rounded mb-4">
-          <img class="img-fluid w-100 h-100 shadow-1-strong" src="./img/real/b_3.jpg" loading="lazy" alt="Embes Pannacotta">
-          <a class="portfolio-btn" href="./img/real/b_3x.jpg" data-lightbox="portfolio" aria-label="portfolio">
-            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-4 mb-lg-0 pe-0">
-        <div class="position-relative overflow-hidden portfolio-item rounded mb-4">
-          <img class="img-fluid w-100 h-100 shadow-1-strong" src="./img/real/b_6.jpg" loading="lazy" alt="Embes Pannacotta">
-          <a class="portfolio-btn" href="./img/real/b_6.jpg" data-lightbox="portfolio" aria-label="portfolio">
-            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-          </a>
-        </div>
-
-        <div class="position-relative overflow-hidden portfolio-item rounded mb-4">
-          <img class="img-fluid w-100 h-100 shadow-1-strong" src="./img/real/b3.jpg" loading="lazy" alt="Embes Pannacotta">
-          <a class="portfolio-btn" href="./img/real/b3.jpg" data-lightbox="portfolio" aria-label="portfolio">
-            <i class="fa fa-plus text-primary" style="font-size: 60px;"></i>
-          </a>
-        </div>
-      </div>
     </div>
   </div>
+  <!-- Feature End -->
 
   <!-- Testimonial Start -->
   <div class="container-fluid py-1">
@@ -309,7 +318,7 @@
           <div class="owl-carousel testimonial-carousel">
             <div class="text-center">
               <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-              <h4 class="font-weight-light mb-4">Bằng sự tận tâm của mình, chúng tôi sẽ cung cấp cho các bạn những chiếc bánh panna cotta ngon, béo mịn và đảm bảo chất lượng ạ! Chân thành cảm ơn các bạn đã ủng hộ EMBEs PannaCotta!</h4>
+              <h4 class="font-weight-light mb-4">Bằng sự tận tâm của mình, EMBEs sẽ cung cấp cho các bạn những chiếc bánh panna cotta ngon, béo mịn và đảm bảo chất lượng ạ! Chân thành cảm ơn các bạn đã ủng hộ EMBEs PannaCotta!</h4>
               <img class="testimonial-d img-fluid mx-auto mb-3" src="./img/main-logo.png" alt="panna cotta">
               <h5 class="font-weight-bold m-0">EMBEs PannaCotta</h5>
             </div>
@@ -369,7 +378,6 @@
   <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
   <script src="./lib/bootstrap.bundle.min.js"></script>
-  <script src="./lib/lightbox/js/lightbox.min.js"></script>
   <script src="./lib/waypoints/waypoints.min.js"></script>
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
 
