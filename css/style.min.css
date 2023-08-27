@@ -1568,6 +1568,9 @@ h5 {
   .back-to-top {
     display: none !important;
   }
+  footer {
+    padding-bottom: 80px !important;
+  }
 }
 
 .bth-navinator {
@@ -1578,7 +1581,7 @@ h5 {
   transform: translateX(-50%);
   display: flex;
   width: auto;
-  background-color: #62c4e6;
+  background-color: #447586;
   border-radius: 45px;
   z-index: 200;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
@@ -3144,4 +3147,47 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 .breadcrumb-item.active {
   color: #6c757d;
+}
+
+footer {
+  background-image: linear-gradient(135deg, #fc4a91 2%, #e09e86 97%);
+  color: white;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+footer .btn {
+  color: white;
+}
+.b-ico.call {
+
+  -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+  animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+}
+
+@keyframes coccoc-alo-circle-img-anim {
+  0% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  10% {
+      transform: rotate(-25deg) scale(1) skew(1deg)
+  }
+  20% {
+      transform: rotate(25deg) scale(1) skew(1deg)
+  }
+  30% {
+      transform: rotate(-25deg) scale(1) skew(1deg)
+  }
+  40% {
+      transform: rotate(25deg) scale(1) skew(1deg)
+  }
+  50% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
+  100% {
+      transform: rotate(0) scale(1) skew(1deg)
+  }
 }
