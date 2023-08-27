@@ -3259,7 +3259,7 @@ footer .btn {
 
 .lightbox img {
 	max-width: 100%;
-	max-height: auto;
+	max-height: 75%;
 	position: relative;
 	top: -100%;
 	transition: all .4s ease;
@@ -3269,6 +3269,14 @@ footer .btn {
 	-webkit-transition: all .4s ease;
   padding: 10px;
 }
+
+@media (min-width: 992px) {
+  .lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
 .lightbox:target {
 	outline: none;
 	top: 0;
