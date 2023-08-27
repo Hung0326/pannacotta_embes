@@ -1581,7 +1581,6 @@ h5 {
   background-color: #62c4e6;
   border-radius: 45px;
   z-index: 200;
-  opacity: .9;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
 }
 .bth-navinator.active {
@@ -2899,6 +2898,9 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .flaticon-ingredient {
   background-image: url(../img/icons/milk-64.png);
 }
+.flaticon-gift {
+  background-image: url(../img/icons/gift-64.png);
+}
 .flaticon-quality {
   background-image: url(../img/icons/quality-64.png);
 }
@@ -2911,6 +2913,22 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 .feature .feature-item h3 {
   font-size: 22px;
   font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  .feature-item {
+    text-align: center;
+  }
+
+  .feature .feature-item i {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .feature .feature-item i::after {
+    left: 50%;
+  }
 }
 
 .section-header {
@@ -2934,22 +2952,22 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
 
 @media (max-width: 991.98px) {
   .section-header h2 {
-      font-size: 40px;
-      font-weight: 600;
+    font-size: 40px;
+    font-weight: 600;
   }
 }
 
 @media (max-width: 767.98px) {
   .section-header h2 {
-      font-size: 35px;
-      font-weight: 600;
+    font-size: 35px;
+    font-weight: 600;
   }
 }
 
 @media (max-width: 575.98px) {
   .section-header h2 {
-      font-size: 30px;
-      font-weight: 600;
+    font-size: 30px;
+    font-weight: 600;
   }
 }
 
@@ -3074,7 +3092,8 @@ button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disab
   .contact .contact-information {
     padding: 20px 0px 0 0px;
   }
-
+}
+@media (max-width: 576px) {
   .contact .contact-info .contact-text h3 {
     margin-bottom: 0;
   }
