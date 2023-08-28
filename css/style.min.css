@@ -1450,7 +1450,9 @@ h5 {
 .fa-angle-right::before {
   content: "\f105";
 }
-
+.fa-youtube:before {
+  content: "\f167";
+}
 .fa-check:before {
   content: "\f00c";
 }
@@ -3148,6 +3150,11 @@ footer {
 
 footer .btn {
   color: white;
+  border-color: white;
+}
+
+footer a svg.bi.bi-tiktok{
+  transform: translateY(2px);
 }
 .b-ico.call {
 
@@ -3297,4 +3304,8 @@ footer .btn {
 	-o-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
   border-radius: 35px;
+}
+
+.border-right {
+  border-right: 1px solid #dee2e6 !important;
 }
