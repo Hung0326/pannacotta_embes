@@ -451,22 +451,52 @@
   </footer>
   <!-- Footer End -->
 
-    <!-- Btn navigator -->
-    <div class="bth-navinator">
-        <a href="tel:0931604585" aria-label="phone">
-            <span class="b-ico call"></span>
-        </a>
-        <a href="/" aria-label="home">
-            <span class="b-ico home-active"></span>
-        </a>
-        <a href="/hinh-anh.html" aria-label="picture">
-            <span class="b-ico picture"></span>
-        </a>
-        <div class="btt">
-            <span class="b-ico top"></span>
-        </div>
-    </div>
-    <!-- End Btn navigator -->
+  <!-- Btn navigator -->
+  <div class="bth-navinator">
+      <a href="tel:0931604585" aria-label="phone">
+          <span class="b-ico call"></span>
+      </a>
+      <a href="/" aria-label="home">
+          <span class="b-ico home-active"></span>
+      </a>
+      <a href="/hinh-anh.html" aria-label="picture">
+          <span class="b-ico picture"></span>
+      </a>
+      <div class="btt">
+          <span class="b-ico top"></span>
+      </div>
+  </div>
+  <!-- End Btn navigator -->
+  <!-- Messenger Plugin chat Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Plugin chat code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "122102521010000778");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v17.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <!-- Back to Top -->
   <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
